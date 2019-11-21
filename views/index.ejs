@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TapSearch</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top">
+        <div>
+            <h1>TapSearch</h1>
+        </div>
+    </div>
+   <form action="/index" method="POST">
+        <textarea class="one" type="text" name="para" placeholder="Enter paragraph"></textarea>
+        <input type="submit" class="button">
+    </form>
+
+   <form class="searchbox" method="POST" action="/search">
+        <input type="text" placeholder="Search..." name="search">
+        <button id="myBtn" type="submit"><i class="fa fa-search"></i></button>
+   </form>
+
+   <div class="box">
+        <a class="btn" href="#popup1">Result</a>
+        <form action="/clear" method="GET">
+           <a class="clearbtn" href="/clear">Clear</a>
+        </form>
+   </div>
+
+   <div id="popup1" class="overlay">
+       <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+    <textarea class="two" type="text" name="result" placeholder="No data found"><% for(var i=0;i<res.length ;i++){ %><%=res[i]+'\n'+'\n'%><% } %></textarea>
+        </div>
+       </div>
+   </div>
+
+</body>
+</html>
