@@ -34,8 +34,8 @@ Proin nibh nisl condimentum id venenatis a. Quam elementum pulvinar etiam non qu
 Aliquet porttitor lacus luctus accumsan tortor. Duis ut diam quam nulla porttitor massa id.
 
 # Sample search
-input 1 -> Lorem 
-input 2 -> Maecenas
+input 1 -> Lorem. 
+input 2 -> Maecenas.
 
 # Sample output
 input 1 -> returns both paragraphs.
