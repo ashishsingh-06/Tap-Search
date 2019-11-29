@@ -13,7 +13,7 @@ http://tap-search-app.herokuapp.com/
 4. to run -> type 'node server.js'
 
 # Functionality
-This project takes in multiple paragraphs and when searched for a word, returns the paragraphs in which word is present. It uses inverted
+This project takes in multiple paragraphs and when searched for a word, returns the paragraphs in which the word is present. It uses inverted
 index mapping to map paragraphs.
 
 # Scope
